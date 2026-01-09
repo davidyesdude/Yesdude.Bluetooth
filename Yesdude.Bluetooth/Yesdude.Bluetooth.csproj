@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.26100.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>AppIcon_Grey.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AppIcon_Blue.ico" />
+    <None Remove="TrayIcon_blue.png" />
+    <None Remove="TrayIcon_grey.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon_Blue.ico" />
+    <EmbeddedResource Include="AppIcon_Grey.ico" />
+    <EmbeddedResource Include="TrayIcon_Blue.png" />
+    <EmbeddedResource Include="TrayIcon_Grey.png" />
+  </ItemGroup>
+
+</Project>
